@@ -5,6 +5,6 @@ Installing
 npm version 4.0.0
 
 
-Install Cypress for Mac, Linux, or Windows, then get started.
+Install Cypress for Mac, Linux, or Windows, then https://docs.cypress.io/guides/getting-started/installing-cypress.html#.
 
 npm install cypress --save-dev
