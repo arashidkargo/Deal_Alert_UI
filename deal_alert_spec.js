@@ -80,7 +80,7 @@ it('Click on a Alert', function()
 it('Take screenshot of the activity Page', function()
    {
   
-cy.screenshot()
+//cy.screenshot()
 
    })
 
