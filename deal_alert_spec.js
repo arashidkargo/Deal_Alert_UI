@@ -73,12 +73,18 @@ cy.request(url).then((response) => {
 it('Click on a Alert', function()
    {
   
-    // cy
+  
+  
 
-    // 	.get('Deal Stopped').click()
+  cy.get(':nth-child(2) > a > .table-link > span').click()    
+   cy.setCookie(auth,auth_value)     
+  
+  cy.screenshot()
 
+  cy.get('.breadcrumb--icon-only').click()
+   cy.setCookie(auth,auth_value)
 
-   })
+})
 
 it('Take screenshot of the activity Page', function()
    {
