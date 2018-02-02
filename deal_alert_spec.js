@@ -29,9 +29,26 @@ describe('Deal Alert UI Integration Test', function()
    {
   cy.get('input[name="username"]').type(usrName).should('have.value', usrName )
   cy.get('input[name="password"]').type(usrPassoword).should('have.value', usrPassoword)
+
+  function req () {
+  cy
+    .request(...)
+    .then((resp) => {
+      // if we got what we wanted
+
+      if (resp.status === 200 && resp.body.ok === true)
+        // break out of the recursive loop
+        return
+
+      // else recurse
+      req()
+    })  
+}
   
 
-  cy.get('button').click()
+  cy.get('button').click().then(req)
+
+  
   cy.setCookie(auth,auth_value)
  
    })
