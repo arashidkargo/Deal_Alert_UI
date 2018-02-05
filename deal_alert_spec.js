@@ -74,27 +74,28 @@ it('Click on a Alert', function()
    {
   
   
-  
 
+
+ 
+ 
   cy.get(':nth-child(2) > a > .table-link > span').click()    
-   cy.setCookie(auth,auth_value)     
+    //cy.setCookie(auth,auth_value)     
   
-  cy.screenshot()
+  ///cy.screenshot(Deal_alert_UI)
 
-  cy.get('.breadcrumb--icon-only').click()
-   cy.setCookie(auth,auth_value)
+
+
+
+
+  ///cy.get('.breadcrumb--icon-only').click()
+  
+
 
 })
 
-it('Take screenshot of the activity Page', function()
-   {
-  
-//cy.screenshot()
-
-   })
-
-
 })
+
+
 
 
 
