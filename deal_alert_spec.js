@@ -58,7 +58,7 @@ describe('Deal Alert UI Integration Test', function()
     cy.url()                      
     .should('include', '/alerts') 
 
-cy.request(url).then((response) => {
+cy.request(dev).then((response) => {
   expect(response.status).to.eq(200)
 
 })
@@ -83,13 +83,13 @@ cy.setCookie(auth,auth_value)
  
   cy.get(':nth-child(2) > a > .table-link > span').click()    
 
+
  
     
 
 
 
 
-    //cy.setCookie(auth,auth_value)     
   
   ///cy.screenshot(Deal_alert_UI)
 
